@@ -4360,28 +4360,27 @@ test_calibration_data <- data.frame(
   )
 
 test_calibration_data
-test_ECE <- weighted.mean(
-  abs(test_calibration_data$calibration_error),
-  test_calibration_data$horses
-)
+# test_ECE <- weighted.mean(
+#   abs(test_calibration_data$calibration_error),
+#   test_calibration_data$horses
+# )
 
-test_MCE <- max(
-  abs(test_calibration_data$calibration_error)
-)
+# test_MCE <- max(
+#   abs(test_calibration_data$calibration_error)
+# )
 
-cat("Test ECE:", test_ECE, "\n")
-cat("Test MCE:", test_MCE, "\n")
-save.image(
-  file = "E:/Horse_Racing_Project/full_workspace_backup.RData"
-)
-file.info("E:/Horse_Racing_Project/full_workspace_backup.RData")$size / 1024^2
-load("E:/Horse_Racing_Project/full_workspace_backup.RData")
+# cat("Test ECE:", test_ECE, "\n")
+# cat("Test MCE:", test_MCE, "\n")
+# save.image(
+#   file = "E:/Horse_Racing_Project/full_workspace_backup.RData"
+# )
+# file.info("E:/Horse_Racing_Project/full_workspace_backup.RData")$size / 1024^2
+# load("E:/Horse_Racing_Project/full_workspace_backup.RData")
 
-ls()
-gc()
-exists("fit_train_original")
-exists("fit_train_extended")
-exists("test_prob_extended")
-fit_train_original$metadata()$method
-fit_train_extended$metadata()$method
-file.info("E:/Horse_Racing_Project/full_workspace_backup.RData")$size / 1024^2
+# ls()
+# gc()
+# exists("fit_train_original")
+# exists("fit_train_extended")
+# exists("test_prob_extended")
+
+
